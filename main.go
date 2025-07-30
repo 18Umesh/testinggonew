@@ -12,7 +12,7 @@ func main() {
 	http.HandleFunc("/ondc/on_init", handleRequest("on_init"))
 	http.HandleFunc("/ondc/on_confirm", handleRequest("on_confirm"))
 
-	port := "8081"
+	port := "8080"
 	fmt.Println("Server running on port", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
